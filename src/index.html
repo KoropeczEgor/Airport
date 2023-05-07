@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&family=Poppins:wght@300;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="wrapper">
+          <h1 class="header__logo">Your Logo</h1>
+          <ul class="header__media">
+            <li class="header__media__link"><a href="#">About</a></li>
+            <li class="header__media__link"><a href="#">Product</a></li>
+            <li class="header__media__link"><a href="#">Pricing</a></li>
+            <li class="header__media__link"><a href="#">Resources</a></li>
+            <li class="header__media__link"><a href="#">Jobs</a></li>
+          </ul>
+          <button class="button" id="louding">Buy now</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <div class="main__wrapper__title">
+            <h1 class="title">Airport</h1>
+            <h2 class="subtitle main__subtitle">
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+              mockups.
+            </h2>
+          </div>
+
+          <div class="main__plane">
+            <h1 class="title main__plane__title">Plane</h1>
+            <h2 class="subtitle main__plane__subtitle">
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+              mockups.
+            </h2>
+            <button class="button main__plane__btn" id="button__open">
+              Buy now
+            </button>
+          </div>
+
+          <div class="main__broken__wrp"></div>
+          <div class="main__broken">
+            <h1 class="title main__broken__title">Broken</h1>
+            <h2 class="subtitle main__broken__subtitle">
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+              mockups.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal__aut" id="id01">
+      <form action="/action_page.php" class="modal__content">
+        <div class="conteiner_img">
+          <img src="./assets/img/avatar.png" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="modal__conteiner">
+          <label for="uname" class="name"><b>UserName</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+        </div>
+
+        <div class="modal__conteiner">
+          <label for="psw" class="password"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+        </div>
+
+        <button type="submit" class="button login_btn">Login</button>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+
+        <button type="button" class="cancelbtn button" id="close__auto">
+          Cancel
+        </button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </form>
+    </div>
+
+    <div class="hystmodal" id="myModal">
+      <div class="hystmodal__window">
+        <h1 class="title hystmodal__title">Plane</h1>
+        <h2 class="subtitle hystmodal__subtitle">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+          voluptatibus error harum quaerat blanditiis possimus soluta quidem
+          omnis nostrum vel, sint minus modi hic. Consequatur quidem libero
+          voluptatum distinctio amet! Nisi nemo quasi nostrum rem est iure dolor
+          facere explicabo eius culpa, facilis veritatis excepturi atque modi
+          ipsam laudantium commodi! Dignissimos laborum odio, veniam at totam
+          assumenda earum ipsa libero?
+        </h2>
+        <button class="button hystmodal__btn" id="button__close">Close</button>
+      </div>
+    </div>
+    <script src="./js/skript.js"></script>
+  </body>
+</html>

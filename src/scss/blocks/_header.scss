@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 72px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    &__logo {
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 20px;
+        color: $white;
+    }
+    &__media {
+        display: flex;
+        align-items: center;
+        margin: 0 283px 0 283px;
+
+        &__link {
+            margin-right: 70px;
+            text-decoration: none;
+            list-style: none;
+            
+            &:nth-child(5) {
+                margin-right: 0;
+            }
+            a {
+                position: relative;
+                line-height: 1;
+                color: $white;
+                &::after {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: orange;
+                    content:'';
+                    transition: width 0.3s ease-out;
+                }
+                &:hover:after,
+                &:focus::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+

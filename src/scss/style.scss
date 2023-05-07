@@ -1,0 +1,26 @@
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.container { 
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@import 'base/veriables';
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/hystmodal';
+@import 'blocks/modal__aut';
